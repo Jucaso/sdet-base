@@ -22,7 +22,7 @@ resource "aws_iam_policy" "lambda_glue_policy" {
       {
         Action = "glue:StartJobRun"
         Effect = "Allow"
-        Resource = aws_glue_job.example.arn
+        Resource = aws_glue_job.etl_job.arn
       }
     ]
   })
